@@ -10,7 +10,7 @@ export default class InfoWindow extends Component {
   render() {
     return (
       <section className='info-window'>
-        <NavLink to='/'>
+        <NavLink to='/' className='home-link'>
           <div className='initials-container'>
             <h3 className='initials'>KB</h3>
             <div className='border'></div>
