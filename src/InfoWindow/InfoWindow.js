@@ -14,13 +14,14 @@ export default class InfoWindow extends Component {
           <div className='border'></div>
         </div>
         <article className='links'>
-          <button className='link-button'>Resume</button>
-          <button className='link-button'>Projects</button>
-          <button className='link-button'>Contact</button>
+          <NavLink to='/resume' className='link-button'>Resume</NavLink>
+          <NavLink to='/contact' className='link-button'>Contact</NavLink>
+          <NavLink to='/projects' className='link-button'>Projects</NavLink>
         </article>
         <Route exact path='/' component={ AboutMe } />
         <Route path='/resume' component={ Resume } />
         <Route path='/contact' component={ Contact } />
+        <Route path='/projects' component={ Projects } />
         <img src='mountains.svg' className='mountains' />
       </section>
     )
