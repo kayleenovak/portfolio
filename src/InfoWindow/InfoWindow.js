@@ -3,16 +3,19 @@ import { Route, NavLink } from 'react-router-dom'
 import { AboutMe } from '../AboutMe/AboutMe.js'
 import { Resume } from '../Resume/Resume.js'
 import { Contact } from '../Contact/Contact.js'
+import { Projects } from '../Projects/Projects.js'
 import './InfoWindow.css'
 
 export default class InfoWindow extends Component {
   render() {
     return (
       <section className='info-window'>
-        <div className='initials-container'>
-          <h3 className='initials'>KB</h3>
-          <div className='border'></div>
-        </div>
+        <NavLink to='/'>
+          <div className='initials-container'>
+            <h3 className='initials'>KB</h3>
+            <div className='border'></div>
+          </div>
+        </NavLink>
         <article className='links'>
           <NavLink to='/resume' className='link-button'>Resume</NavLink>
           <NavLink to='/contact' className='link-button'>Contact</NavLink>
