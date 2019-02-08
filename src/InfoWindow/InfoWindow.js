@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import { Route, NavLink } from 'react-router-dom'
 import { AboutMe } from '../AboutMe/AboutMe.js'
+import { Resume } from '../Resume/Resume.js'
+import { Contact } from '../Contact/Contact.js'
 import './InfoWindow.css'
 
 export default class InfoWindow extends Component {
@@ -15,7 +18,9 @@ export default class InfoWindow extends Component {
           <button className='link-button'>Projects</button>
           <button className='link-button'>Contact</button>
         </article>
-        <AboutMe />
+        <Route exact path='/' component={ AboutMe } />
+        <Route path='/resume' component={ Resume } />
+        <Route path='/contact' component={ Contact } />
         <img src='mountains.svg' className='mountains' />
       </section>
     )

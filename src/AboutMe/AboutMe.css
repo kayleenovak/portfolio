@@ -1,0 +1,21 @@
+.who-am-i {
+  grid-column: 1 / span 2;
+  position: relative;
+  z-index: 100000;
+  text-align: left;
+}
+
+.details {
+  color: #2F4858;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 20px 0 0 150px;
+}
+
+.description {
+  color: grey;
+  font-weight: normal;
+  margin-left: 150px;
+  width: 400px;
+  line-height: 1.5;
+}
